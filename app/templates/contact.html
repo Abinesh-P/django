@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style2.css' %}">
+</head>
+<body>
+    <section class="container">
+        <header>Registration Form</header>
+        <form method="post" action="{% url 'contact' %}" class="form">
+            {% csrf_token %}
+        <div class="input-box">
+            <label>Full name</label>
+            <input type="text" placeholder="Enter full name" name='full_name' required/>
+        </div>
+
+        <div class="input-box">
+            <label>Email Address</label>
+            <input type="text" placeholder="Enter email address" name='email' required/>
+        </div>
+
+        <div class="column">
+            <div class="input-box">
+            <label>Phone Number</label>
+            <input type="text" placeholder="Enter phone number" name='phone_number' required/>
+        </div>
+
+        <div class="input-box">
+            <label>Birth Date</label>
+            <input type="date" placeholder="Enter Birth Date" name='birth_date' required/>
+        </div>
+        </div>
+        <div class="gender-box">
+            <h3> Gender</h3>
+            <div class="gender-option">
+                <div class="gender">
+                    <input type="radio" value="Male" id="check-male" name="gender" checked/>
+                    <label for="check-male">Male</label>
+                </div>
+                <div class="gender">
+                    <input type="radio" value="Female" id="check-female" name="gender"/>
+                    <label for="check-female">Female</label>
+                </div>   <div class="gender">
+                    <input type="radio" id="check-other" value="others" name="gender"/>
+                    <label for="check-other">Prefer not to say</label>
+                </div>
+            </div>
+        </div>
+        <div class="input-box">
+            <label>Address</label>
+            <input type="text" placeholder="Enter street address" name="street_address"required/>
+            
+            <div class="column">
+                <div class="select-box">
+                    <select name='country' >
+                        <option hidden> Country</option>
+                        <option value='America'> America</option>
+                        <option value='Japan'> Japan</option>
+                        <option value='India'> India</option>
+                        <option  value='Nepal'> Nepal</option>
+                    </select>
+                </div>
+            </div>
+            <input type="text" placeholder="Enter your city" name='city' required/>
+            <input type="text" placeholder="Enter your region" name='region' required/>
+            <input type="text" placeholder="Enter postal code" name='postal_code' required/>
+        </div>
+
+        <button type='submit' >sumbit</button>
+
+        </form>
+
+    </section>
+    
+</body>
+</html>

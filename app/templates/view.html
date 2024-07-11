@@ -1,0 +1,44 @@
+<html>
+    <body>
+        <div class="col-md-6">
+            {% if datas %}
+            <h3 class="page-header text-primary text-center">View Details</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>full_name</th>
+                        <th>email</th>
+                        <th>phone_number</th>
+                        <th>birth_date</th>
+                        <th>gender</th>
+                        <th>street_address</th>
+                        <th>city</th>
+                        <th>region</th>
+                        <th>postal_code</th>
+                        <th>country</th>
+                    </tr>
+                </thead>    
+                {% for data in datas %}
+                <tbody>
+                    <tr>
+                        <td>{{forloop.counter}}</td>
+                        <td>{{data.full_Name}}</td>
+                        <td>{{data.email}}</td>
+                        <td>{{data.phone_number}}</td>
+                        <td>{{data.birth_date}}</td>
+                        <td>{{data.gender}}</td>
+                        <td>{{data.street_address}}</td>
+                        <td>{{data.city}}</td>
+                        <td>{{data.postal_code}}</td>
+                        <td>{{data.country}}</td>
+                    </tr>
+                </tbody>
+                {% endfor %}       
+            </table>
+            {% endif %}
+        </div>
+    </div>
+
+    </body>
+
+</html>

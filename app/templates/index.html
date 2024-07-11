@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section id="home" class="header">
+        <nav>
+            <a href="index.html"><img src="{% static 'img/logo.jpeg'%}" ></a>
+            <div class="nav-links" id="navLinks">
+             <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#course">Course</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
+    <div class="text-box">
+        <h1>World's Biggest University</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+            Unde dicta debitis sed quibusdam facilis omnis id voluptate non natus impedit?</p>
+        <a href="" class="hero-btn">Visit Us to Know More</a>
+    </div>
+    </section>
+<!--course-->
+
+<section id="course" class="course">
+    <h1>Course We Offer</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, commodi?</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Quisquam cupiditate perspiciatis praesentium, impedit pariatur nemo neque ipsam culpa dolore, aperiam, repellendus natus hic. Unde natus dolor accusamus ab id optio quaerat, eius vel. Doloribus.</p>
+
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Quisquam cupiditate perspiciatis praesentium, impedit pariatur nemo neque ipsam culpa dolore, aperiam, repellendus natus hic. Unde natus dolor accusamus ab id optio quaerat, eius vel. Doloribus.</p>
+
+        </div>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>Quisquam cupiditate perspiciatis praesentium, impedit pariatur nemo neque ipsam culpa dolore, aperiam, repellendus natus hic. Unde natus dolor accusamus ab id optio quaerat, eius vel. Doloribus.</p>
+
+        </div>
+
+
+    </div>
+
+</section>
+<!--campus-->
+<section id="blog" class="campus">
+    <h1>Our Global Campus</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, aspernatur.</p>
+
+    <div class="row">
+        <div class="campus-col">
+            <img height="520px" width="200px" src="{% static 'img/london.jpeg' %}">
+            <div class="layer">
+                <h3>LONDON</h3>
+
+            </div>
+        </div>
+        <div class="campus-col">
+            <img height="520px" width="200px" src="{% static 'img/222.jpg' %}">
+            <div class="layer">
+                <h3>NEW YORK</h3>
+
+            </div>
+        </div>
+        <div class="campus-col">
+            <img height="520px" width="200px" src="{% static 'img/333.jpg' %}">
+            <div class="layer">
+                <h3>WASHINGTON</h3>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!---Facilities-->
+<section id="about" class="facilities">
+    <h1>Our Facilities</h1>
+    <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores rem illo doloremque veniam consectetur eum deleniti, placeat architecto tempora est.</P>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img height="200px" width="200px" src="{% static 'img/library.jpg' %}">
+            <h3>World class library</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni placeat aperiam itaque maxime id! Et voluptates minus fugiat beatae ratione.</p>
+
+        </div>
+        <div class="facilities-col">
+            <img height="200px" width="200px" src="{% static 'img/basketball.jpg' %}">
+            <h3>Large Play Ground</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni placeat aperiam itaque maxime id! Et voluptates minus fugiat beatae ratione.</p>
+
+        </div>
+        <div class="facilities-col">
+            <img height="200px" width="200px" src="{% static 'img/cafe.jpeg' %}">
+            <h3>Tasty and Healthy Food</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni placeat aperiam itaque maxime id! Et voluptates minus fugiat beatae ratione.</p>
+        </div>
+         </div>
+
+</section>
+{% comment %} testimonials {% endcomment %}
+<section class="testimonials">
+    <h3>What Our Studemts Says</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni placeat aperiam itaque maxime id! Et voluptates minus fugiat beatae ratione.</p>
+
+    <div class="row">
+        <div class="testimonials-col">
+            <img src="{% static 'img/user1.jpeg' %}">
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quas in magnam consequatur sint blanditiis vero ratione officiis veritatis repudiandae.
+                </p>
+                <h3>Christine Berkley</h3>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-stroke"></i>
+            </div>
+
+        </div>
+        <div class="testimonials-col">
+            <img src="{% static 'img/user2.jpeg' %}">
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quas in magnam consequatur sint blanditiis vero ratione officiis veritatis repudiandae.
+                </p>
+                <h3>David Byer</h3>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-stroke"></i>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!---Call to action-->
+<section id="contact" class="cta">
+    <h1>Enroll for Our various online courses <br>Anywhere from The World</h1>
+    <a href={% url 'contact' %} class="hero-btn">CONTACT</a>
+
+</section>
+<!---footer-->
+<section class="footer">
+    <h4>About</h4>
+    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam maiores Lorem ipsum dolor sit amet.<br>ea nesciunt nisi sint natus alias perferendis delectus sapiente porro!</P>
+    <div class="icons">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-square-whatsapp"></i>
+        
+
+    </div>
+    <div>Made with <i class="fa-solid fa-heart-pulse"></i> by Easy Tutorials</div>
+</section>
+
+<!-- -footer2 -->
+<!-- <section>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <h1>About</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quo dolorum quod nam vero non inventore, ex doloribus quam cupiditate.</p>
+            </div>
+            <div class="col">
+                <h3>office</h3>
+                <p>ITPL Road<br>
+                Whitefield, Banglore<br>
+                Karnataka, PIN 560056, India</p>
+                <p class="email-id">avinashdm@gmail.com</p>
+                <h4>+91 - 8737838033</h4>
+            </div>
+            <div class="col">
+                <h3>Newsletter</h3>
+                <from>
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email id" required>
+                    <button type="submit"><i class="fa fa-arrow-right"></i></button><br>
+                
+            </div>
+            <div class="social"> -->
+                <!-- <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-whatsapp"></i>
+            </from>
+
+            </div>
+        </div>
+    </footer>
+</section> -->
+
+
+
+
+
+
+<!---javascript-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+
+        }
+        function hideMenu(){
+            navLinks.style.right = "-260px";
+        }
+    </script>
+</body>
+</html>
